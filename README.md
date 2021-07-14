@@ -34,8 +34,6 @@ And get bin data for different settings:
 - For bert model, use `bin-bert.sh`
 - If you woud like to use PubMEBBERT, please use `bin-pubmedbert.sh`.
 
-```Note that you should set the bert-nmt code path in script, and do some minor modify following the comments in scrpts```
-
 
 ### Training and Inference
 All train and inference scripts can be found at `./train_and_test_scripts/`
