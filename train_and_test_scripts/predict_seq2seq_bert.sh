@@ -1,17 +1,17 @@
 
 
-# if [ ! -d "/tmp/bert-nmt" ]; then
-	cd /tmp
-	git clone https://github.com/bert-nmt/bert-nmt
-	git clone https://github.com/moses-smt/mosesdecoder.git
-	cd bert-nmt
-
-	git checkout update-20-10
-	pip install --editable . --user
-	pip install transformers==3.5.0 --user
-# fi
-export MKL_THREADING_LAYER=GNU
-pip install torch==1.5.0  # to load new version checkpoint
+## if [ ! -d "/tmp/bert-nmt" ]; then
+#	cd /tmp
+#	git clone https://github.com/bert-nmt/bert-nmt
+#	git clone https://github.com/moses-smt/mosesdecoder.git
+#	cd bert-nmt
+#
+#	git checkout update-20-10
+#	pip install --editable . --user
+#	pip install transformers==3.5.0 --user
+## fi
+#export MKL_THREADING_LAYER=GNU
+#pip install torch==1.5.0  # to load new version checkpoint
 
 FAIRSEQ=/tmp/bert-nmt
 

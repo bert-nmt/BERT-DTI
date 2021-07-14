@@ -1,8 +1,12 @@
 # BERT-DTI
 This repo provide the experiment codes for the KD-DTI benchmark, which aims to extract Drug-Target Interaction knowledge from biomedical literatures.
-
+Our code is based on BERT-NMT
 
 ## Get stared:
+### Prepare environment
+Run `./utils/prepare_environment.sh` to install required package and install bert-nmt to default path `/tmp/bert-nmt/`
+
+
 ### Preprocess the raw data:
 Run `./data_scripts/build_seq2seq_data.sh`: a script that preprocess the raw files, it takes two params:
 - input_dir: path to dir contain json raw data
@@ -15,7 +19,7 @@ For the \*.x files, each line is a document.
 
 For the \*.y files, each line is made up of <d> drug_1 <r> relation_1 <t> target_1  <d> drug_2 <r> relation_2 <t> target_2, etc
 
-
+```Notice!! Before processing the data, you should first register a DrugBank account, download the xml data set, and replace the entity id with the entity name in the drugbank.```
 
 ### Tokenize and Binarize data:
 Run `./data_scripts/move_and_bin_data.sh`: a script that tokenize and binarize the preprocessed files, it takes two params:

@@ -1,4 +1,4 @@
-FAIRSEQ=/path_to_bert-nmt_code/bert-nmt
+FAIRSEQ=/tmp/bert-nmt
 
 
 python $FAIRSEQ/preprocess.py \

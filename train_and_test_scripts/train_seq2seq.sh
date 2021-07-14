@@ -1,5 +1,14 @@
 ARCH=transformer_iwslt_de_en
-FAIRSEQ=/blob2/yinxia/wu2/code/fairseq
+
+if [ ! -d "~/fairseq" ]; then
+
+git clone git clone --depth 1 --branch v0.6.2 https://github.com/pytorch/fairseq.git
+cd ~/fairseq/
+pip install --editable .
+
+fi
+
+FAIRSEQ=~/fairseq
 export PYTHONPATH=$FAIRSEQ:$PYTHONPATH
 
 

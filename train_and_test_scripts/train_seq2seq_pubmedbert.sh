@@ -1,14 +1,14 @@
 #!/bin/bash
-if [ ! -d "/tmp/bert-nmt" ]; then
-
-	cd /tmp
-	git clone https://github.com/bert-nmt/bert-nmt
-	cd bert-nmt
-
-	git checkout update-20-10
-	pip install --editable . --user
-	pip install transformers==3.5.0 --user
-fi
+#if [ ! -d "/tmp/bert-nmt" ]; then
+#
+#	cd /tmp
+#	git clone https://github.com/bert-nmt/bert-nmt
+#	cd bert-nmt
+#
+#	git checkout update-20-10
+#	pip install --editable . --user
+#	pip install transformers==3.5.0 --user
+#fi
 
 FAIRSEQ=/tmp/bert-nmt
 
