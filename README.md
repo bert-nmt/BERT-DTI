@@ -1,6 +1,6 @@
 # BERT-DTI
 This repo provide the experiment codes for the KD-DTI benchmark, which aims to extract Drug-Target Interaction knowledge from biomedical literatures.
-Our code is based on BERT-NMT
+Our code is based on BERT-NMT.
 
 ## Get stared:
 ### Prepare environment
