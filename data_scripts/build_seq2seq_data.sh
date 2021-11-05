@@ -9,6 +9,6 @@ OUTPUT_DIR=$2  # path to save processed seq2seq data
 echo Output to: $OUTPUT_DIR
 mkdir -p $OUTPUT_DIR
 
-python ./scripts/preprocess_data.py ${INPUT_DIR}train.json  ${OUTPUT_DIR}train
-python ./scripts/preprocess_data.py ${INPUT_DIR}valid.json  ${OUTPUT_DIR}valid
-python ./scripts/preprocess_data.py ${INPUT_DIR}test.json  ${OUTPUT_DIR}test
+python ./data_scripts/preprocess_data.py ${INPUT_DIR}train.json  ${OUTPUT_DIR}train
+python ./data_scripts/preprocess_data.py ${INPUT_DIR}valid.json  ${OUTPUT_DIR}valid
+python ./data_scripts/preprocess_data.py ${INPUT_DIR}test.json  ${OUTPUT_DIR}test
