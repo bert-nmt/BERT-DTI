@@ -2,6 +2,8 @@
 This repo provide the experiment codes for the KD-DTI benchmark, which aims to extract Drug-Target Interaction knowledge from biomedical literatures.
 Our code is based on BERT-NMT.
 
+Public version dataset is aviailable at [here](https://www.dropbox.com/sh/0e52w6p7wiek9ab/AADfoBOTAUOJOaP6Yxfq75R-a?dl=0&lst=)
+
 ## Get stared:
 ### Prepare environment
 Run `./utils/prepare_environment.sh` to install required package and install bert-nmt to default path `/tmp/bert-nmt/`
